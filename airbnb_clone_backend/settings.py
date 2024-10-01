@@ -34,11 +34,6 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-z7by*(z0kk!!q30!hfh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    # Add your production host(s) here, e.g., "yourdomain.com"
-]
 
 
 # ==============================
@@ -100,8 +95,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'airbnb_clone_backend.urls'
-
-ALLOWED_HOSTS = ['manishkumar.vercel.app'] 
+ALLOWED_HOSTS = [
+    'airbnb-clone-backend-ye6h51qhu-manishs-projects-aef301b2.vercel.app',
+    'localhost',  # Allow local development
+    '127.0.0.1',  # Allow local development
+]
 # ==============================
 # Templates Configuration
 # ==============================
