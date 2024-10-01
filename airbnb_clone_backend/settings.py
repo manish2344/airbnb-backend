@@ -282,3 +282,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+ALLOWED_HOSTS = ['.vercel.app']

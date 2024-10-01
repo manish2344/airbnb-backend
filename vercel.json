@@ -2,16 +2,13 @@
     "version": 2,
     "builds": [
       {
-        "src": "manage.py",
+        "src": "airbnb_clone_backend/asgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "50mb" }
+        "config": { "maxLambdaSize": "15mb" }
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "manage.py"
-      }
+    
+      { "src": "/(.*)", "dest": "airbnb_clone_backend/asgi.py" }
     ]
   }
-  
