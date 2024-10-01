@@ -96,10 +96,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'airbnb_clone_backend.urls'
 ALLOWED_HOSTS = [
-    'airbnb-clone-backend-ye6h51qhu-manishs-projects-aef301b2.vercel.app',
-    'localhost',  # Allow local development
-    '127.0.0.1',  # Allow local development
+    'airbnb-clone-backend-malrw4b7t-manishs-projects-aef301b2.vercel.app',
+    'your-production-domain.com',  # Add your actual production domain if applicable
+    'localhost',
+    '127.0.0.1',
 ]
+
+ALLOWED_HOSTS = ['*']
+USE_X_FORWARDED_HOST = True
 # ==============================
 # Templates Configuration
 # ==============================
